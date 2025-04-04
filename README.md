@@ -26,12 +26,12 @@ This C-based HTTP server is a lightweight, single-threaded server that handles b
 
 # Components of the server
 The server consists of the following key functions:
-main(): Initializes the server, listens for connections, and handles clients.
-handle_client(): Parses HTTP requests and determines the response.
-send_response(): Reads requested files and sends them as HTTP responses.
-get_mime_type(): Determines the MIME type of requested files.
-log_request(): Logs all incoming HTTP requests.
-url_decode_selected(): Decodes URL-encoded characters in file paths.
+- main(): Initializes the server, listens for connections, and handles clients.
+- handle_client(): Parses HTTP requests and determines the response.
+- send_response(): Reads requested files and sends them as HTTP responses.
+- get_mime_type(): Determines the MIME type of requested files.
+- log_request(): Logs all incoming HTTP requests.
+- url_decode_selected(): Decodes URL-encoded characters in file paths.
 
 # Step-by-step execution
 1. Create a TCP socket using socket().
