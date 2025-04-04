@@ -7,9 +7,9 @@ This C-based HTTP server is a lightweight, single-threaded server that handles b
 # How it works
 1. The server listens for incoming TCP connections on PORT 8080.
 2. When a client sends an HTTP request:
-        The server parses the method and requested file.
-        It blocks directory traversal attempts.
-        It serves the requested file from the www/ folder.
+- The server parses the method and requested file.
+- It blocks directory traversal attempts.
+- It serves the requested file from the www/ folder.
 3. Logs every request into server.log.
 
 # Features
@@ -41,9 +41,9 @@ url_decode_selected(): Decodes URL-encoded characters in file paths.
 5. Read the HTTP request, extract the method and file path.
 6. Check for malicious path traversal (../).
 7. Handle GET requests:
-        If the path is /, serve a default file (text.txt).
-        Remove leading / and add the www directory.
-        Find the file and determine its MIME type.
-        Send the file as an HTTP response.
+- If the path is /, serve a default file (text.txt).
+- Remove leading / and add the www directory.
+- Find the file and determine its MIME type.
+- Send the file as an HTTP response.
 8. Log each request for debugging and security.
 9. Close the connection once the response is sent.
